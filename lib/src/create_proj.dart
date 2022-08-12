@@ -140,7 +140,7 @@ var app =
 // But you have to add 'server' in app.runServer() if you are clustering your app using isolator.
 
 
-import 'package:momentum_web/momentum_web.dart';
+import 'package:endeavor/endeavor.dart';
 import '../Controllers/Home.dart';
 
 class App{
@@ -159,7 +159,7 @@ class App{
   var homeController = 
 """
 import 'dart:async';
-import 'package:momentum_web/momentum_web.dart';
+import 'package:endeavor/endeavor.dart';
 
 
 class RootController{
@@ -198,7 +198,7 @@ ENTRYPOINT ["/usr/bin/dart", "main.dart"]
 
   """
 name: $projectName
-description: A simple high performance Momentum web application.
+description: A simple high performance Endeavor web application.
 version: 1.0.0
 homepage: https://www.$projectName.com
 
@@ -208,7 +208,7 @@ environment:
 dependencies:
   path: ^1.8.0
   args: ^2.3.1
-  momentum_web: any
+  endeavor: any
 
   
   """;
