@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:args/command_runner.dart';
 import 'dart:async';
 
-import 'watchdog/runner.dart';
-import 'watchdog/watchdog.dart';
+import 'runner.dart';
+import 'watchdog.dart';
 
 
 class ServerCommand extends Command{

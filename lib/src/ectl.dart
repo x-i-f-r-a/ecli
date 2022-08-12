@@ -13,7 +13,7 @@ import 'show_version.dart';
 
 void main(List<String> arguments) async {
 
-final runner = CommandRunner('mctl', 'Create and manage web applications using Momentum web framework')
+final runner = CommandRunner('ectl', 'Create and manage web applications using Endeavor web framework')
   ..addCommand(ServerCommand())
   ..addCommand(CreateProj())
   ..addCommand(BuildApp())
