@@ -1,6 +1,6 @@
 name: ectl
 description: A CLI app to creating and managing server apps using Momentum Web Framework.
-version: 0.1.5
+version: 0.1.6
 
 homepage: https://github.com/x-i-f-r-a/mcli
 
