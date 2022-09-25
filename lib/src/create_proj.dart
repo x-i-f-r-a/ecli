@@ -133,7 +133,7 @@ class CreateProj extends Command{
 """;
   var content = 
 """
-import 'app/myApp.dart';
+import 'app/$projectName.dart';
 
 void main() async {
 
@@ -234,7 +234,7 @@ var isolator =
 import 'dart:io';
 import 'package:args/args.dart';
 import 'dart:isolate';
-import 'app/myApp.dart';
+import 'app/$projectName.dart';
 
 void main(List<String> args){
 
@@ -265,7 +265,7 @@ void main(List<String> args){
 
 """;
 
-  print('\x1B[34mECTL 0.1.5\x1B[0\n');
+  print('\x1B[34mECTL 0.1.13\x1B[0\n');
 
   File('${Directory.current.path}/$projectName/main.dart').create(recursive: true).then((value) {
     File file = value;

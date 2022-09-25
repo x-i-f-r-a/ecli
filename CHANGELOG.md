@@ -24,3 +24,7 @@
 ## 0.1.12
 
 - Typo fixes
+
+## 0.1.13
+
+- Bug fixes
