@@ -265,7 +265,7 @@ void main(List<String> args){
 
 """;
 
-  print('\x1B[34mmMCTL 0.1.4\x1B[0\n');
+  print('\x1B[34mECTL 0.1.5\x1B[0\n');
 
   File('${Directory.current.path}/$projectName/main.dart').create(recursive: true).then((value) {
     File file = value;
@@ -307,9 +307,20 @@ void main(List<String> args){
       
       
       }).then((value) {
-        print('\x1B[34m[ * ]\x1B[0m Project created!');
-        print('\n\n\x1B[34m[ * ]\x1B[0m    cd $projectName');
-        print('\n\n\x1B[34m[ * ]\x1B[0m    mctl dev\n\n');
+        print('\n\n\x1B[34m[ * ]\x1B[0m Project created!');
+        print('\n\x1B[34m[ * ]\x1B[0m    cd $projectName');
+        print('\n\x1B[34m[ * ]\x1B[0m    ectl dev\n');
+      }).then((value) async {
+       
+        var result = await Process.run('dart', ['pub','get','--directory=${Directory.current.path}/$projectName/']);
+        
+        if(result.stderr.toString() != ''){
+          stdout.write(result.stderr);
+          stdout.write('\nNote: Run "dart pub get" on project directory if any error occurs while running ');
+        }else{
+          stdout.write(result.stdout);
+        }
+      
       });
       });
     });
