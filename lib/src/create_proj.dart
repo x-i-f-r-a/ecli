@@ -161,7 +161,7 @@ class App{
 
   app.GET('/', RootController().Home);
 
-  // Kindly remove below 'server' from app.runServer() if you are not clustering app into multiple isolates.
+  // You can remove 'server' from app.runServer() if you are not clustering app into multiple isolates.
 
   await app.runServer(server: server);
 }
@@ -178,7 +178,7 @@ class RootController{
 
   FutureOr Home(Request req, Response res) async {
 
-    res.Template('index.html', {'title': 'My Momentum App'});
+    res.Template('index.html', {'title': 'My Endeavor App'});
     
   }
 }
