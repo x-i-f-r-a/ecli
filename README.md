@@ -1,1 +1,1 @@
-Command line tool for creating and managing server apps developed in Endeavor web framework.
+Command line tool for creating and managing server apps developed in Endeavor Web Framework.

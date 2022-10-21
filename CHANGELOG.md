@@ -28,3 +28,11 @@
 ## 0.1.13
 
 - Bug fixes
+
+## 0.1.14
+
+- Minor fixes
+
+## 0.1.15
+
+- Small fixes
